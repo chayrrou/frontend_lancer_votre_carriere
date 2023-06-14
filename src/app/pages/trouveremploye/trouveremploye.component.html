@@ -1,0 +1,33 @@
+<div class="body">
+    <div class="header">
+      <div style="margin-top: 5%;">
+        <div class="d-flex justify-content-center m-4">
+          <h1>Trouver <strong>Employe</strong></h1>
+        </div>
+      </div>
+    </div>
+     
+    <div class="cardcontainer">
+      <div class="card" *ngFor="let dip of lesdiplomes">
+        <div class="card-header">
+          <h2>{{ dip.Nom }}</h2>
+          <p>{{ dip.Prenom }}</p>
+        </div>
+        <div class="card-body">
+          <p class="location">{{ dip.Adresse }}</p>
+          <p class="salary">{{dip.Email}}</p>
+          
+          <ul class="requirements">
+            <li style="font-size: 20px;color:rgb(1, 1, 44)"><a style="text-decoration: none;" download="dip.CV.pdf" href="dip.CV.pdf">Download CV</a></li>
+
+            <li style="font-size: 20px;color:rgb(1, 1, 44)"><a style="text-decoration: none;" download="dip.Diplome.pdf" href="dip.Diplome.pdf">Download Diplome</a></li>
+
+            <li>(Lettre de  motivation) {{dip.Lettre}}</li>
+          </ul>
+          <a class="btn">Details</a>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  

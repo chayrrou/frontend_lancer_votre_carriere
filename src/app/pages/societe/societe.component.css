@@ -1,0 +1,135 @@
+.header {
+    /* background-color: #4682b4; */
+    padding: 50px;
+    text-align: center;
+    height: 10rem;
+  }
+  .cardcontainer{
+    margin-top: 5%;
+    height:900px;
+    background-color:  #ff8c00;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+    .card {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      margin: 5px;
+      overflow: hidden;
+      width: 300px;
+      height: 380px;
+      color:#0a1425;
+    }
+    .card:hover {
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4); /* Updated box shadow properties on hover */
+    }
+  .card-header {
+    background-color: #add8e6;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card-header h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .description {
+    font-size: 12px; /* Taille de police */
+    font-weight: bold; /* Gras */
+    color: #03154a; /* Couleur du texte */
+    margin-bottom: 10px; /* Marge inférieure */
+    text-transform: lowercase; /* Ajout d'une ombre */
+    transition: transform 0.3s ease; /* Ajout de transition pour l'effet d'attraction */
+  }
+  
+  .description:hover {
+    transform: scale(1.07); /* Effet d'attraction - légèrement agrandir l'élément */
+  }
+  .card-header p {
+    font-size: 16px;
+    margin: 5px 0 0;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  .card-body h2 {
+    font-size: 24px; /* Taille de police */
+    font-weight: bold; /* Gras */
+    color: #17075f; /* Couleur du texte */
+    margin-bottom: 10px; /* Marge inférieure */
+    text-transform: uppercase; /* Texte en majuscules */
+  }
+  
+  .duration {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .location {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .requirements {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .requirements li {
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: block;
+    background-color: #ff6f61;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e55649;
+  }
+  
+  .body{
+    margin: 0;
+      padding: 0;
+      color: #9c9893;
+      font-family: Tahoma, Geneva, sans-serif;
+      font-size: 13px;
+      line-height: 1.7em; 
+      background-color: #0a1425;
+      background-image: url(../../../assets/images/tooplate_body.jpg);
+      background-repeat: repeat-x;
+      background-position: top;
+  }
+  
+  h1{
+    font-family: 'Nunito';
+    width: 21%;
+    text-align: center;
+    border: 5px solid tomato;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    color: white;
+  }
+  
+  strong{
+    font-size: 40px;
+    color: white;
+  }

@@ -1,0 +1,97 @@
+.body{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em; 
+    background-color: #0a1425;
+    background-image: url(../../../assets/images/tooplate_body.jpg);
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  height: 7rem;
+
+}
+
+.container {
+  margin-right:25%;
+  max-width: 700px;
+  /* margin: 0 auto; */
+  background-color: white;
+  padding: 50px;
+  border-radius: 35px;
+  box-shadow: 0 0 10px white;
+}
+
+h1 {
+  color:blue;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+button.btn-submit {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+}
+
+button.btn-submit:hover {
+  background-color:green;
+}
+
+button.btn-submit:active {
+  background-color:green;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+      max-width: 100%;
+      padding: 10px;
+  }
+}
+
+
+
+.erreur{
+  position: absolute;
+  color: tomato;
+  bottom: 2px;
+  font-size:smaller;
+  left: 16px;
+
+}
+
+
+input.ng-valid { border: 2px solid green; }
+input.ng-invalid { border: 2px solid red; }
+
+textarea.ng-valid { border: 2px solid green; }
+textarea.ng-invalid { border: 2px solid red; }

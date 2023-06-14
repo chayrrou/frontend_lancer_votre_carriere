@@ -1,0 +1,16 @@
+#tooplate_header {
+	overflow: hidden;
+	margin-left: 70px;
+	height: 40%;
+	/*background: url(../../../assets/images/logolvcf.png) no-repeat top;*/
+  }
+  
+  #tooplate_header video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  

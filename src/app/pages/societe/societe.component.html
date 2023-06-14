@@ -1,0 +1,56 @@
+<div class="body">
+    <div>
+      <div class="header">
+        <div style="margin-top: 3%;">
+          <div class="d-flex justify-content-center m-4">
+            <h1>Trouver <strong>Entreprise</strong></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cardcontainer">
+      <div class="card" *ngFor="let sc of lessocietes">
+          <div class="card-header">
+            <img [src]="sc.Logo" width="270px" height="160px" alt="logo societe" />
+          </div>
+          <div class="card-body">
+              <h2>{{sc.Nom}}</h2>
+            <p>{{sc.Email}}</p>
+            <p class="location">Address:{{sc.Adresse}}</p>
+            <p class="description">{{sc.Activite}} </p>
+          </div>
+      </div>
+
+
+      <div class="card">
+        
+          <div class="card-header">
+            <img src="../../../assets/images/tt.jpg" width="270px" height="120px" alt="logo societe" />
+          </div>
+          <div class="card-body">
+              <h2>Tunisie Telecome</h2>
+            <p>Tunisietel@gmail.com</p>
+            <p class="location">Address:Lac2</p>
+            <p class="description">Tunisie Telecom offre des services 
+              de communication (téléphonie fixe, mobile et Internet) </p>
+          </div>
+      
+      </div>
+      <div class="card">
+        
+        <div class="card-header">
+          <img src="../../../assets/images/Vermeg.jpg" width="270px" height="120px" alt="logo societe" />
+        </div>
+        <div class="card-body">
+            <h2>VERMEG</h2>
+          <p>communicationVermeg@gmail.com</p>
+          <p class="location">Address:Tunis</p>
+          <p class="description">VERMEG est une maison de logiciels spécialisée couvrant ces principaux marchés : Banque, Marché des Capitaux et Assurances. Nous fournissons des solutions 
+            OOTB éprouvées et une plateforme de transformation numérique, PALMYRA. </p>
+        </div>
+    
+    </div>
+    </div>
+    </div>
+  

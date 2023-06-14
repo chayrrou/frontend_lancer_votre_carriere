@@ -1,0 +1,73 @@
+
+<div class="body">
+    <div class="header">
+    </div>
+    <div style="height: 1000px;">
+        <div class="container" >
+            <h1>** Formulaire d'inscription (Societe)**</h1>
+            <form [formGroup]="inscriSocieteForm" action="#" (ngSubmit)="onAjouterOffre()" method="POST">         
+                <div class="form-group">
+                    <div style="display: flex; align-items: center;">
+                        <div style="flex: 1;">
+                            <label for="nom">Nom </label>
+                            <input type="text" id="nom" placeholder="Votre nom" name="nom" formControlName="Nom"  required>
+                            <div *ngIf="nom&& nom.invalid && nom.dirty" class="erreur" style="margin-left: 1.5%;margin-bottom:30.7%;">
+                                *Le nom contient min de 3 char et commencer par une majuscule
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div style="display: flex; align-items: center;">
+                        <div style="flex: 1;">
+                            <label for="prenom">Adresse </label>
+                            <input type="text" id="adresse" placeholder="Adresse(ville-rue-code postal)" name="adresse" formControlName="Adresse" required>
+                            <div *ngIf="adresse&& adresse.invalid && adresse.dirty"   class="erreur" style="margin-left: 0.5%;margin-bottom:24.8%;">
+                                *Adresse est un champ obligatoire doit composer de (Ville-Rue-CodePostal)
+                            </div>
+                        </div>
+                        <div style="flex: 1;margin-left: 3%;">
+                            <label for="email">Email :</label>
+                            <input type="text" id="email" placeholder="foulen@gmail.com" name="email" formControlName="Email" required>
+                            <div  *ngIf="email&& email.invalid && email.dirty"  class="erreur" style="margin-left: 0.5%; margin-bottom:24.7%;">
+                                *Email est un champ obligatoire sous format(foulen@gmail.com)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="activite">Activités</label>
+                    <textarea type="text" id="activite" name="activite" placeholder="Votre Activités" formControlName="Activite" required></textarea>
+                    <div  *ngIf="activite&& activite.invalid && activite.dirty" class="erreur" style="margin-left: 1.5%; margin-bottom:17.2%;">
+                        *Activite est un champ obligatoire et doit commencer par une majuscule
+                    </div>
+                </div>
+                
+            
+                <div style="flex: 1">
+                <label for="pass">Password </label>
+                <input type="password" id="pass"  name="pass" formControlName="password" required>
+                <div *ngIf="password&& password.invalid && password.dirty"   class="erreur" style="margin-left: 1.5%;margin-bottom:23.2%;">
+                    *password est un champ obligatoire 
+                </div>
+            </div>
+
+                <div class="form-group" >
+                    <div style="display: flex; align-items: center;margin-left: 35%;">
+                        <div style="flex: 1;">
+                            <label for="logo">Logo D'entreprise </label>
+                            <input type="file" id="logo" name="logo" accept="image/*" (change)="handleFileInput($event)" formControlName="Logo">
+                                   <p>{{ selectedFileName }}</p>
+
+                        </div>
+                    </div>
+                   
+                      
+                </div>
+            
+                <button type="submit" class="btn-submit">S'inscrire</button>
+            </form>
+        </div>
+    </div>
+</div>

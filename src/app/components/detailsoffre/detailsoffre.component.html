@@ -1,0 +1,271 @@
+
+<div class="body">
+	
+	
+    <div class="header">
+		
+				
+        <h2 style="color: aliceblue;">{{selectedoffre.Titre}}</h2>
+      
+			
+	
+    </div>
+<div class="body2">
+<div class="container mt-4">
+	<div class="row mb-5">
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-12 mb-4">
+					<img alt=""  src="../../../assets/images/actia.png" class="img-thumbnail p-0 border-0"  id="imgetp"/>
+				</div>
+<!--[src]="selectedoffre.logo"-->
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card" id="c1">
+				<div class="card-body">
+					<h1>Actia</h1>
+					<p class="m-0">
+						<i class="fas fa-star fa-sm"></i>
+						<i class="fas fa-star fa-sm"></i>
+						<i class="fas fa-star fa-sm"></i>
+						<i class="far fa-star fa-sm"></i>
+						<i class="far fa-star fa-sm"></i>
+					</p>
+					<ul class="list-group list-group-flush mb-4">
+						<li class="list-group-item pl-0 pr-0 pt-2 pb-2">Poste: <span style="color: blue;">{{selectedoffre.Titre}}</span></li>
+						
+						
+						<li class="list-group-item pl-0 pr-0">
+							<p class="m-0 h2">{{selectedoffre.Salaire}}</p>
+							
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 mt-4">
+			<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+				<li class="nav-item"  role="presentation">
+					<a class="nav-link lead active" role="tab" data-bs-toggle="tab" data-bs-target="#tabDescription">Description de la scocieté</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link lead" role="tab" data-bs-toggle="tab"  data-bs-target="#tabSpecification">Profile</a>
+				</li>
+			
+				<li class="nav-item"  role="presentation">
+					<a class="nav-link lead " role="tab" data-bs-toggle="tab" data-bs-target="#tabFaq">Admissibilité</a>
+				</li>
+				<li class="nav-item"  role="presentation">
+					<a class="nav-link lead " role="tab" data-bs-toggle="tab" data-bs-target="#tabVideo">Processus</a>
+				</li>
+				<li class="nav-item"  role="presentation">
+					<a class="nav-link lead " role="tab" data-bs-toggle="tab" data-bs-target="#tabBlog">Logistique</a>
+				</li>
+				
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane pt-4 active" role="tabpanel" id="tabDescription">
+                    <h2 style="color:aliceblue">A propos Actia</h2>
+					<p style="font-weight:bolder;font-size: larger;font-family: 'Franklin Gothic Medium';"> Nos clients viennent avec des idées,des projets,que nous transformons en solutions It qui leur apportent plus  d'agilité,de performance... </p>
+				</div>
+				<div class="tab-pane pt-4" role="tabpanel" id="tabSpecification">
+					<ul>
+						{{selectedoffre.RoleCondidat}}
+							
+					</ul>
+				</div>
+				
+				<div class="tab-pane pt-4" role="tabpanel" id="tabFaq">
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+							<div class="card-header bg-blue" id="headingOne" data-toggle="collapse" data-target="#collapseOne">Compétences</div>
+							<div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+								<div class="card-body">
+									<ul>
+										{{selectedoffre.Admissibilite}}
+								</ul>
+							</div>
+							
+						</div>
+						</div>
+						<div class="card">
+							<div class="card-header bg-blue" id="headingTwo" data-toggle="collapse"  data-target="#collapseTwo">Langues</div>
+							<div class="card-body">
+							<ul>
+									<li>Très bon niveau en Français et Anglais</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header bg-blue" id="headingThree" data-toggle="collapse" data-target="#collapseThree">Niveau d'étude minimum:</div>
+							<div class="card-body">
+								<ul>
+							<li>Licence (obligatoire).</li>
+						</ul>
+							</div>
+							</div>		
+					
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+				<div class="tab-pane pt-4" role="tabpanel" id="tabVideo">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="card">
+								<img class="card-img-top" src="../../../assets/images/etape1.png" alt="">
+								<div class="card-body">
+									{{selectedoffre.Prossesus}}
+								</div>
+								<div class="card-footer">
+									<p class="card-text"><a href="#">Next=></a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<img class="card-img-top" src="../../../assets/images/etape2.png" alt="">
+								<div class="card-body">
+								Un entretien  avec les ressources humaines (RH).
+								<br><br><br><br>
+								</div>
+								<div class="card-footer">
+									<p class="card-text"><a href="#">Next=></a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<img class="card-img-top" src="../../../assets/images/etape3.png" alt="">
+								<div class="card-body">
+									Un entretien  face à un opérationnel.
+									<br>
+									<br>
+									<br>
+									</div>
+								<div class="card-footer">
+									<p class="card-text"><a href="#">Next=></a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<img class="card-img-top" src="../../../assets/images/etape4.png" alt="">
+								<div class="card-body">
+								Le bilan et le suivi de l'entretien
+								</div>
+								<div class="card-footer">
+									<p class="card-text"><a href="#">Terminé!</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane pt-4" role="tabpanel" id="tabBlog">
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="row mb-5">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-md-3">
+											<i class="fa-solid fa-truck-fast fa-beat-fade fa-2xl"></i>
+											<p class="h5">{{selectedoffre.Logistique}}<br/><small class="text-muted"></small></p>
+										</div>
+										<div class="col-md-3">
+											<i class="fa-solid fa-house fa-beat-fade fa-2xl"></i>
+											<p class="h5">Logement<br/><small class="text-muted"></small></p>
+										</div>
+										<div class="col-md-3">
+											<i class="fa-solid fa-laptop-slash fa-beat-fade fa-2xl"></i>											
+											<p class="h5">Ordinateur Portable<br/><small class="text-muted"></small></p>
+										</div>
+										<div class="col-md-3">
+											<i class="fa-solid fa-block-question fa-beat-fade fa-2xl"></i>
+											
+											<p class="h5">Aide 24/7 <br/><small class="text-muted">Nous répondons aux questions tout le temps</small></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+<div class="container">
+	<div class="row mb-5">
+		<div style=" margin-left: 10%;">
+            <div class="col-md-10">
+                <div class="card" style="position: relative;bottom: 15px;">
+                    <div class="card-header">Contact Us</div>
+                    <div class="card-body">
+                        <p class="m-0"><strong>Website:</strong></p>
+                        <p class="m-0"><strong>Adresse:</strong>
+							BP 57, 1 RUE NEWTON, Cebalat Ben Ammar 2088</p>
+                        
+                        <p class="m-0"><strong>E-mail :</strong>
+							actiacontact@gmail.com </p>
+						<p class="m-0"><strong>Tél & Fax</strong></p>
+                        <p> (+216) 70 106 100<br>
+							 (+216) 70 106 111</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+		<div></div>
+		<div class="col-md-12 mb-5">
+			<div class="card" style="position: relative;top: 300px;">
+				<div class="card-header">
+					<p class="m-0 lead text-center">Réseaux sociaux</p>
+				</div>
+				<div class="card-body">
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-3x fab fa-facebook-f"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-3x fab fa-twitter"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-3x fab fa-instagram"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-3x fab fa-google-plus-g"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-3x fab fa-youtube"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-3x fab fa-pinterest"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-3x fab fa-linkedin-in"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	
+	</div>
+</div>
+</div>

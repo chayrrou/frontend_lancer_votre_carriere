@@ -1,0 +1,92 @@
+<div class="body">
+    <div class="header">
+    </div>
+    <div style="height: 1000px;">
+        <div class="container">
+            <h1>** Publier une offre d'emploi **</h1>
+            <form [formGroup]="offreForm"   action="#" method="POST" (ngSubmit)="onAjouterOffre()" enctype="multipart/form-data" style="margin-top: 5%;">
+                <div class="form-group">
+                    <div style="display: flex; align-items: center;">
+                        <div style="flex: 1;">
+                            <label >Titre de l'offre </label>
+                            <input type="text" placeholder=" Titre"  name="titre" formControlName="Titre" required>
+                            <div *ngIf="titre && titre.invalid && titre.dirty" class="erreur" style="margin-left: 30.5%;margin-bottom:29.2%;">
+                                *Titre est un champ obligatoire et de 5 caractere
+                            </div>
+                          
+                        </div>
+                        <div style="flex: 1;margin-left: 3%;">
+                            <label for="date">Date de publication </label>
+                            <input type="date" id="date" name="date" formControlName="DatePublication" required>
+                            <div *ngIf="datePublication && datePublication.invalid && datePublication.dirty" class="erreur" style="margin-left: 50%;margin-bottom:29.2%;">
+                                *Date est champ obligatoire (dd/mm/yyyy)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="salaire">Salaire </label>
+                    <input type="text" placeholder=" Salaire" id="salaire" name="salaire" formControlName="Salaire" required>
+                    <div *ngIf="salaire && salaire.invalid && salaire.dirty" class="erreur" style="margin-left: 31%;margin-bottom:23.2%;">
+                        *Salaire est de type number
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div style="display: flex; align-items: center;">
+                        <div style="flex: 1;">
+                            <label for="role">Rôle du candidat </label>
+                            <textarea id="role" placeholder=" Role du candidat" name="role" formControlName="RoleCondidat" required></textarea>
+                            <div *ngIf="roleCondidat && roleCondidat.invalid && roleCondidat.dirty" class="erreur" style="margin-left: 31%;margin-bottom:15.9%;">
+                                *Role de condidat est champ obligatoire
+                            </div>
+                        </div>
+                        <div style="flex: 1;margin-left: 3%;">
+                            <label for="admissibilite">Admissibilité :</label>
+                            <textarea id="admissibilite" placeholder="Admissibilité " name="admissibilite" formControlName="Admissibilite" required></textarea>
+                            <div *ngIf="admissibilite && admissibilite.invalid && admissibilite.dirty"  class="erreur" style="margin-left: 50%;margin-bottom:15.9%;">
+                                *Admissibilite est champ obligatoire
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div style="display: flex; align-items: center;">
+                        <div style="flex: 1;">
+                            <label for="processus">Processus de sélection </label>
+                            <textarea id="processus" placeholder="Processus" name="processus" formControlName="Prossesus" required></textarea>
+                            <div *ngIf="prossesus && prossesus.invalid && prossesus.dirty" class="erreur" style="margin-left: 31%;margin-bottom:8.1%;">
+                                *Processus est champ obligatoire
+                            </div>
+                        </div>
+                        <div style="flex: 1;margin-left: 3%;">
+                            <label for="logistique">Logistique </label>
+                            <textarea id="logistique" placeholder="Logistique" name="logistique" formControlName="Logistique" required></textarea>
+                            <div *ngIf="logistique && logistique.invalid && logistique.dirty" class="erreur" style="margin-left: 50%;margin-bottom:8.1%;">
+                                *Logistique est champ obligatoire
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="logo">Logo de la société:</label>
+                        <input type="file" id="logo" accept="image/*" (change)="handleFileInput($event)" formControlName="Logo">
+                      </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Publier</button>
+            </form>
+        </div>
+    </div>    
+</div>
+    <!--<form action="#" method="POST" [formGroup]="offreForm" (ngSubmit)="onAjouterOffre()" enctype="multipart/form-data">
+        
+         <div class="form-group">
+            <label for="logo">Logo :</label>
+            <input type="file" id="logo" name="logo" accept="image/*" required>
+        </div> 
+        <div>
+            <label for="logo">Logo de la société:</label>
+            <input type="file" id="logo" accept="image/*" (change)="handleFileInput($event)" formControlName="Logo">
+          </div>
+        <button type="submit" class="btn-submit">Publier</button>-->
+   

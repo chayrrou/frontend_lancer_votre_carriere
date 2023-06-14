@@ -1,0 +1,77 @@
+.header{
+  padding: 50px;
+  text-align: center;
+  height: 10rem;
+  margin-bottom: 3%;
+}
+.body{
+  margin: 0;
+  padding: 0;
+  color: #9c9893;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 13px;
+  line-height: 1.7rem; 
+
+  background-color: #0a1425;
+  background-image: url(../../../assets/images/tooplate_body.jpg);
+  background-repeat: repeat-x;
+  background-position: top;
+}
+
+h1{
+  font-family: 'Nunito';
+  width: 21%;
+  text-align: center;
+  border: 5px solid tomato;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: tomato;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  margin-right: 20px;
+  font-size: 24px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+.link i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}

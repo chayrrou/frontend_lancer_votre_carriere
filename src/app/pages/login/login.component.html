@@ -1,0 +1,48 @@
+<div class="body">
+    <div class="header">
+    </div>
+    <div style="height: 1000px;">
+        <div class="container" >
+            <h1> Formulaire D'authentification </h1>
+            
+            <div class="form-group inscrire">
+                <h5>S'inscrire ?</h5>
+                    <div class="liste" >
+                        <select  [(ngModel)]="typeInscription" (change)="select()" class="custom-select" >
+                            <option value="" selected  disabled>S'inscrire en tant qu'</option>
+                            <option value="ets">Étudiant</option>
+                            <option value="etd">Étudiant diplômé</option>
+                            <option value="sc">Société</option>
+                        </select> 
+                    </div>
+            </div>
+    
+            <form [formGroup]="loginForm"  method="POST">
+                <div class="form-group">
+                    <div style="flex: 1;">
+                        <label for="nom">Email </label>
+                        <input type="text" id="email" placeholder="Votre Mail" name="email"  formControlName="Email" required>
+                        <div  *ngIf="emaillogin && emaillogin.invalid && emaillogin.dirty" class="erreur" style="margin-left: 22.5%; margin-bottom:19.2%;">
+                            Email is a required field
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div style="flex: 1;">
+                        <label for="password">Password </label>
+                        <input type="password" id="password" placeholder="Votre password" name="password" formControlName="password" required>
+                        <div   *ngIf="passwordlogin && passwordlogin.invalid && passwordlogin.dirty" class="erreur" style="margin-left: 20.5%; margin-bottom:11.5%;">
+                            Password isn't correct (min 6)
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="button-container">
+                    <button type="submit" class="btn-submit" (click)="onSubmitstagiere()" >Connexion Etudiant</button>
+                    <button type="submit" class="btn-submit" (click)="onSubmitETD()" >Connexion Diplomé</button>
+                    <button type="submit" class="btn-submit" (click)="onSubmitSC()" >Connexion Societe</button>
+                  </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="body">
+  <div class="header">
+    <div style="margin-top: 5%;">
+      <div class="d-flex justify-content-center m-4">
+        <h1>Trouver <strong>Stagiaire</strong></h1>
+      </div>
+    </div>
+  </div>
+   
+  <div class="cardcontainer">
+    <div class="card" *ngFor="let stagiaire of lesstagiaires">
+      <div class="card-header">
+        <h2>{{ stagiaire.Nom }}</h2>
+        <p>{{ stagiaire.Prenom }}</p>
+      </div>
+      <div class="card-body">
+        <p class="location">{{ stagiaire.Adresse }}</p>
+        <p class="salary">{{stagiaire.Email}}</p>
+        
+        <ul class="requirements">
+          <li style="font-size: 20px;color:rgb(1, 1, 44)"><a style="text-decoration: none;" download="cv2022.pdf" href="../../../assets/images/cv2022.pdf">Download CV</a></li>
+          <li>Lettre de  motivation:{{stagiaire.Lettre}} </li>
+        </ul>
+        <a class="btn" [routerLink]="['/detailsstagieres', stagiaire.id]">Details Stagiaire</a>
+      </div>
+    </div>
+  
+  </div>
+</div>

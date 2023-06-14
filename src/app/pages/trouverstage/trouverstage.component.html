@@ -1,0 +1,27 @@
+
+
+<div class="body">
+  <div class="header">
+    <div style="margin-top: 5%">
+      <div class="d-flex justify-content-center m-4">
+        <h1>Trouver <strong>Stage || Offre</strong></h1>
+      </div>
+    </div>
+  </div>
+ 
+  <div  class="cardcontainer" >
+    <div class="card" *ngFor="let offre of lesoffres" >
+      <div class="card-header">
+        <h2>{{offre.Titre}}</h2>
+      </div>
+      <div class="card-body">
+        <p class="price">{{offre.DatePublication| date:'yyyy-MM-dd' }}</p>
+        <p class="description">...</p>
+        
+        <a class="btn" [routerLink]="['/details-offre', offre.id]">Details Offre</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
